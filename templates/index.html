@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expenses Sharing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Daily Expenses Sharing Application!</h1>
+    <p>Select an action to continue:</p>
+    <ul>
+        <li><a href="/users/create">Create a New User</a></li>
+        <li><a href="/expenses/add">Add an Expense</a></li>
+        <li><a href="/download/balance_sheet">Download Balance Sheet</a></li>
+    </ul>
+
+    <h2>Added Users</h2>
+    <ul>
+        {% for email, user in users.items() %}
+            <li>
+                {{ user.name }} ({{ email }}) - 
+                <a href="/download/{{ email }}">Download Expenses</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
