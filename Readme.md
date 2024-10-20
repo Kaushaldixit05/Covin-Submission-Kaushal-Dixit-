@@ -34,7 +34,7 @@ This application allows users to manage their daily expenses, split bills among 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Kaushaldixit05/Covin-Submission-Kaushal-Dixit-.git
    cd <repository_name>
 
 2. Create a virtual environment (optional but recommended):
