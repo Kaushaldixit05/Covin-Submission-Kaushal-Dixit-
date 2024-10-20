@@ -24,10 +24,12 @@ This application allows users to manage their daily expenses, split bills among 
 
 ## Getting Started
 
-### Prerequisites
+## Prerequisites
 
-- Python 3.x
+- Python 3.11.0 (64-bit)
 - pip (Python package installer)
+
+Note: The application is developed and tested with Python 3.11.0 (64-bit). If you are using a different version of Python, it may lead to compatibility issues.
 
 ### Installation
 
